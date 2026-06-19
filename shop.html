@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shop — Cruella</title>
+<meta name="description" content="The Cruella catalogue — curated vintage footwear and clothing. Filter by category and brand." />
+<link rel="icon" href="fotos/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="announce">Curated vintage · Shipped across Europe</div>
+<header class="site-header">
+  <div class="wrap hbar">
+    <button class="hburger" id="hburger" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+    <nav class="hnav">
+      <a href="shop.html" aria-current="page">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="index.html" class="hlogo" aria-label="Cruella — home"><img src="fotos/logo.png" alt="Cruella" /></a>
+    <div class="hright">
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://vinted.com" target="_blank" rel="noopener" aria-label="Vinted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6l8 13 8-13"/><path d="M4 6h16"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <img src="fotos/logo.png" alt="Cruella" />
+    <button class="mobile-menu__close" id="mClose" aria-label="Close menu">×</button>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="mobile-menu__social">
+    <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://vinted.com" target="_blank" rel="noopener">Vinted</a>
+  </div>
+</div>
+
+<main class="wrap">
+  <header class="shop-head">
+    <p class="label" style="margin-bottom:10px;">The catalogue</p>
+    <h1>Shop all pieces</h1>
+
+    <div class="filters" id="filters">
+      <div class="frow" id="catRow"><span class="frow__label">Category</span></div>
+      <div class="frow" id="subRow" hidden><span class="frow__label">Type</span></div>
+      <div class="frow" id="brandRow"><span class="frow__label">Brand</span></div>
+    </div>
+    <p class="result-count" id="resultCount"></p>
+  </header>
+
+  <section class="pgrid" id="shopGrid" style="padding-bottom:clamp(54px,8vw,104px);"></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="foot__logo" href="index.html"><img src="fotos/logo.png" alt="Cruella" /></a>
+      <div class="foot__col"><span class="label">Shop</span>
+        <a href="shop.html">All pieces</a>
+        <a href="shop.html#footwear">Footwear</a>
+        <a href="shop.html#clothing">Clothing</a>
+      </div>
+      <div class="foot__col"><span class="label">Info</span>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot__col"><span class="label">Follow</span>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://vinted.com" target="_blank" rel="noopener">Vinted</a>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© <span data-year></span> Cruella · Curated vintage</span>
+      <span>Hand-picked in Europe</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="modal__bg" data-close></div>
+  <div class="modal__panel">
+    <div class="modal__grid">
+      <div class="modal__media" id="mMedia">
+        <img id="mImg" src="" alt="" />
+        <button class="gal-btn prev" id="mPrev" aria-label="Previous photo">‹</button>
+        <button class="gal-btn next" id="mNext" aria-label="Next photo">›</button>
+        <div class="gal-dots" id="mDots"></div>
+      </div>
+      <div class="modal__info">
+        <button class="modal__close" data-close aria-label="Close">×</button>
+        <p class="modal__brand" id="mBrand"></p>
+        <h3 class="modal__name" id="mName"></h3>
+        <p class="modal__price" id="mPrice"></p>
+        <dl class="spec" id="mSpec"></dl>
+        <p class="modal__desc" id="mDesc"></p>
+        <a class="btn" id="mCta" href="contact.html">Reserve this piece</a>
+        <p class="modal__note">Ref <span id="mRef"></span> · One of a kind</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="produtos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

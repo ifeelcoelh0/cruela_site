@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cruella — Curated Vintage</title>
+<meta name="description" content="Cruella — hand-picked vintage and second-hand fashion. Designer rarities and affordable finds, shipped across Europe." />
+<link rel="icon" href="fotos/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="announce">Curated vintage · Shipped across Europe</div>
+<header class="site-header">
+  <div class="wrap hbar">
+    <button class="hburger" id="hburger" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+    <nav class="hnav">
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="index.html" class="hlogo" aria-label="Cruella — home"><img src="fotos/logo.png" alt="Cruella" /></a>
+    <div class="hright">
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://vinted.com" target="_blank" rel="noopener" aria-label="Vinted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6l8 13 8-13"/><path d="M4 6h16"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__top">
+    <img src="fotos/logo.png" alt="Cruella" />
+    <button class="mobile-menu__close" id="mClose" aria-label="Close menu">×</button>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="mobile-menu__social">
+    <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://vinted.com" target="_blank" rel="noopener">Vinted</a>
+  </div>
+</div>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <img class="hero__img" src="fotos/aesthetic_shoes.jpg" alt="A curated selection of vintage shoes" />
+  </section>
+  <section class="editorial__text center" style="padding-block:clamp(40px,6vw,76px);">
+    <p class="label">Curated vintage · Europe</p>
+    <h1 class="display" style="max-width:18ch;">Hand-picked pieces,<br>given a second life.</h1>
+    <a href="shop.html" class="link-underline">Shop all</a>
+  </section>
+
+  <!-- ===== EDITORIAL FEATURE ===== -->
+  <section class="editorial split">
+    <a class="editorial__media" href="shop.html" aria-label="Shop the edit">
+      <img src="fotos/0004_1.jpg" alt="Floral embroidered denim platform clogs" />
+    </a>
+    <div class="editorial__text">
+      <p class="label">The edit</p>
+      <h2>One-of-a-kind, never restocked.</h2>
+      <p>Every piece is sourced and checked by hand — designer rarities and honest vintage from the 90s and Y2K. When it’s gone, it’s gone.</p>
+      <a href="shop.html" class="link-underline">Browse the catalogue</a>
+    </div>
+  </section>
+
+  <!-- ===== NEW IN ===== -->
+  <section class="section wrap">
+    <div class="section__head">
+      <h2>New in</h2>
+      <a href="shop.html" class="link-underline">View all</a>
+    </div>
+    <div class="pgrid" id="newGrid"></div>
+  </section>
+
+  <!-- ===== FOUNDER NOTE ===== -->
+  <section class="note">
+    <div class="wrap">
+      <p class="label" style="margin-bottom:18px;">Cruella</p>
+      <h2>Good fashion shouldn’t be thrown away.</h2>
+      <p>Hi, I’m the founder of Cruella. This is my little corner for the vintage I fall in love with — pieces with history, picked one by one and passed on to you. Any questions, just message me. I’m always happy to help.</p>
+      <p class="sign">— Cruella</p>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="section reviews">
+    <div class="wrap">
+      <div class="section__head" style="justify-content:center;text-align:center;flex-direction:column;align-items:center;">
+        <p class="label">Real buyers · Vinted &amp; Instagram</p>
+        <h2>What people say</h2>
+      </div>
+      <div class="rev-grid" id="revWall"></div>
+    </div>
+  </section>
+
+  <!-- ===== CTA STRIP ===== -->
+  <section class="strip-cta">
+    <div class="wrap">
+      <h2>Found something you love?</h2>
+      <p>Message us to reserve a piece, ask for measurements, or request more photos and video.</p>
+      <a href="contact.html" class="btn">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="foot__logo" href="index.html"><img src="fotos/logo.png" alt="Cruella" /></a>
+      <div class="foot__col"><span class="label">Shop</span>
+        <a href="shop.html">All pieces</a>
+        <a href="shop.html#footwear">Footwear</a>
+        <a href="shop.html#clothing">Clothing</a>
+      </div>
+      <div class="foot__col"><span class="label">Info</span>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="foot__col"><span class="label">Follow</span>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://vinted.com" target="_blank" rel="noopener">Vinted</a>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span>© <span data-year></span> Cruella · Curated vintage</span>
+      <span>Hand-picked in Europe</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== QUICK VIEW MODAL ===== -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="modal__bg" data-close></div>
+  <div class="modal__panel">
+    <div class="modal__grid">
+      <div class="modal__media" id="mMedia">
+        <img id="mImg" src="" alt="" />
+        <button class="gal-btn prev" id="mPrev" aria-label="Previous photo">‹</button>
+        <button class="gal-btn next" id="mNext" aria-label="Next photo">›</button>
+        <div class="gal-dots" id="mDots"></div>
+      </div>
+      <div class="modal__info">
+        <button class="modal__close" data-close aria-label="Close">×</button>
+        <p class="modal__brand" id="mBrand"></p>
+        <h3 class="modal__name" id="mName"></h3>
+        <p class="modal__price" id="mPrice"></p>
+        <dl class="spec" id="mSpec"></dl>
+        <p class="modal__desc" id="mDesc"></p>
+        <a class="btn" id="mCta" href="contact.html">Reserve this piece</a>
+        <p class="modal__note">Ref <span id="mRef"></span> · One of a kind</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="produtos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
