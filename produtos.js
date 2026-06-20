@@ -27,7 +27,7 @@
 
 const ARTIGOS = [
   {
-    ref: "0001",
+    ref: "0003",
     category: "footwear",
     subcategory: "Heels",
     name: "Cream leather Mary Jane heels",
@@ -54,7 +54,7 @@ const ARTIGOS = [
     sold: false,
   },
   {
-    ref: "0003",
+    ref: "0001",
     category: "footwear",
     subcategory: "Platforms",
     name: "Brown leather peep-toe platform mules",
